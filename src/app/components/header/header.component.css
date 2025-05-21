@@ -1,0 +1,63 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  margin:0;
+  border-bottom: 1px solid black;
+  height: 3.5rem;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size:1.5rem ;
+
+  margin-left: 1rem;
+}
+
+form{
+  margin-right: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+input{
+  padding:0.7rem;
+  border-radius: 25px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px black solid;
+}
+
+button{
+  position: absolute;
+  right: 5px;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 25px;
+  background-color: #fff;
+  border:0
+}
+h2{
+  font-family: "Playwrite DK Loopet";
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width:1217px) {
+form{
+  margin-right:0;
+}
+}
+@media screen and (max-width:600px) {
+h2{
+  display: none;
+}
+input{
+  width: 200px;
+}
+}

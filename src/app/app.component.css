@@ -1,0 +1,105 @@
+.main{
+  justify-content: center;
+  position: relative;
+  display: flex;
+  height: 93.1vh;
+  margin: 0;
+}
+
+.main img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  left: 0;
+}
+
+.information{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #fff;
+  height: 20%;
+  top:50%;
+  left:50%;
+  translate: -50% -50%;
+  /* padding: 12rem; */
+  width: 25%;
+  height: 60%;
+  border-radius: 20px;
+}
+.information h1{
+  display: flex;
+  top: 0;
+  justify-content: start;
+  position:absolute;
+  margin-top: 0.5rem;
+}
+
+.temperature p{
+font-weight: bold;
+font-size: 2rem;
+}
+.temperature h2{
+display: flex;
+align-items: center;
+text-align: center;
+}
+
+
+.weather{
+  display: flex;
+  position: absolute;
+  top:5rem;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.weather i{
+font-size: 5rem;
+}
+.weather h2{
+font-size: 2rem;
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: center ;
+}
+
+.extra{
+  top: 8rem;
+  position: relative;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.extra h3{
+  font-size: 1.5rem;
+}
+
+.firstScreen{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('/beautiful_day.jpg'); /* înlocuiește cu calea reală */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+
+
+@media screen and(max-width:1156px) {
+.information{
+width: 50%;
+}
+}

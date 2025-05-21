@@ -1,0 +1,10 @@
+<div class="sticky">
+  <div class="header">
+    <div class="logo"><i class="fa-solid fa-cloud-sun-rain" style="color: #FFD43B;"></i>
+      <h2>MeteoSearch</h2></div>
+      <form  [formGroup]="form" (ngSubmit)="onSubmit()">
+        <input [formControl]="form.controls.locations" type="text" class="input_location">
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+  </div>
+</div>
