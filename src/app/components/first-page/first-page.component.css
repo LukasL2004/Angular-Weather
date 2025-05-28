@@ -1,0 +1,80 @@
+.firstScreen {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+h1{
+  color: #000;
+}
+
+.firstScreen video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  margin: 0;
+}
+
+
+
+.body{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 30%;
+  width: 25%;
+  border-radius: 20px;
+}
+
+.logo{
+top: 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-family: "Playwrite DK Loopet";
+margin-top:10px;
+}
+.logo i{
+  font-size: 3rem;
+}
+p{
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  text-align: center;
+
+}
+
+.wraper{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top:3rem ;
+}
+
+button{
+  border:0;
+  background-color: #fff;
+  height: 2.14rem;
+  font-size: 1rem;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color:#ffc800 ;
+}
+input{
+  border: 0;
+  height: 2rem;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  outline: 0;
+  padding-left: 1rem;
+}

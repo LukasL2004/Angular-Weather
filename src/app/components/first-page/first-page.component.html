@@ -1,0 +1,25 @@
+<div class="firstScreen">
+  <video autoplay muted loop playsinline>
+    <source type="video/mp4" src="/mixkit-stunning-sunset-seen-from-the-sea-4119-hd-ready.mp4">
+  </video>
+<div class="body">
+  <div class="logo">
+    <i class="fa-solid fa-cloud-sun-rain" style="color: #ffc800;"></i>
+    <h2>MeteoSearch</h2>
+  </div>
+  @if(errorMessage !== ''){
+    <p >{{errorMessage}}</p>
+  }
+  @else {
+    <p>Please enter a location to see the current temperature.</p>
+  }
+      <form [formGroup]="form" (ngSubmit)="onSubmit(form.controls.location.value!)">
+        <div class="wraper">
+          <input type="text"  placeholder="Enter location here" formControlName="location">
+          <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+      </form>
+    </div>
+    </div>
+
+

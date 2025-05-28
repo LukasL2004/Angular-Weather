@@ -9,9 +9,10 @@
 .main img{
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100.6%;
   z-index: -1;
   left: 0;
+  margin: 0;
 }
 
 .information{
@@ -81,25 +82,25 @@ justify-content: center ;
   font-size: 1.5rem;
 }
 
-.firstScreen {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  color: #0000;
-}
-
-.firstScreen video {
+.loading {
+  color: #000;
+  display: flex;
+  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-  z-index: -1;
+  transform: translate(-50%, -50%) scale(1);
+  animation:grow 1s infinite alternate;
 }
 
+@keyframes grow {
+  from {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(2);
+  }
+}
 
 
 
@@ -108,3 +109,6 @@ justify-content: center ;
 width: 50%;
 }
 }
+
+
+
