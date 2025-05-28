@@ -21,13 +21,12 @@
   align-items: center;
   position: absolute;
   background-color: #fff;
-  height: 20%;
   top:50%;
   left:50%;
   translate: -50% -50%;
   /* padding: 12rem; */
   width: 25%;
-  height: 60%;
+  height: 50%;
   border-radius: 20px;
 }
 .information h1{
@@ -104,11 +103,44 @@ justify-content: center ;
 
 
 
-@media screen and(max-width:1156px) {
+@media screen and (max-width:1090px) {
 .information{
-width: 50%;
+width: 40%;
 }
 }
 
+@media screen and (max-width:720px) {
+.information{
+width: 55%;
+
+}
+}
+@media screen and (max-width:530px) {
+.information{
+width: 65%;
+}
+/* .extra h2{
+  font-size: 1.3rem;
+}
+.extra h3{
+  font-size: 1.2rem;
+} */
+.temperature p{
+  font-size:1.6rem ;
+}
+.temperature h2{
+  font-size:1.6rem ;
+}
+}
+@media screen and (max-width:400px) {
+.information{
+width: 65%;
+}
+}
+@media screen and (max-width:350px) {
+.information{
+width: 70%;
+}
+}
 
 
