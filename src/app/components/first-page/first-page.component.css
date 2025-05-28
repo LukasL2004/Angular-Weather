@@ -78,3 +78,19 @@ input{
   outline: 0;
   padding-left: 1rem;
 }
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-background iframe {
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  object-fit: cover;
+}
